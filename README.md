@@ -37,12 +37,3 @@ The sparsity ratio γ controls what fraction of activations are preserved:
 ## Pretrained Weights
 
 The pretrained weights are adversarially trained on **CIFAR-10** with `gamma=0.1`.
-
-## Uploading Weights as a GitHub Release
-
-1. Go to [Releases → Create a new release](https://github.com/maurapintor/sparse-resnet18-kwta/releases/new)
-2. Set the tag to **`v1.0`**
-3. Attach the file **`kwta_spresnet18_0.1_cifar_adv.pth`**
-4. Publish the release
-
-The `hubconf.py` entry point will then download weights automatically when `pretrained=True`.
